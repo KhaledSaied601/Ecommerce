@@ -34,7 +34,7 @@ function App() {
 
   const routing = createBrowserRouter([
     {
-      path: 'Ecommerce', element: <LayOut />, children: [
+      path: '', element: <LayOut />, children: [
 
 
         { path: '', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
