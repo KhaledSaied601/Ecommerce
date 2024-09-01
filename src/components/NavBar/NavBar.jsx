@@ -32,13 +32,13 @@ function NavBar() {
     function ToggleDarkMode() {
         if (localStorage.getItem('color-theme')) {
             if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.add('dark','bg-gray-800');
+                document.documentElement.classList.add('dark', 'bg-gray-800');
                 document.documentElement.classList.remove('bg-neutral-200');
                 localStorage.setItem('color-theme', 'dark');
                 setIsDark(true)
-            
+
             } else {
-                document.documentElement.classList.remove('dark','bg-gray-800');
+                document.documentElement.classList.remove('dark', 'bg-gray-800');
                 document.documentElement.classList.add('bg-neutral-200');
                 localStorage.setItem('color-theme', 'light');
                 setIsDark(false)
@@ -48,13 +48,13 @@ function NavBar() {
             // if NOT set via local storage previously
         } else {
             if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark','bg-gray-800');
+                document.documentElement.classList.remove('dark', 'bg-gray-800');
                 document.documentElement.classList.add('bg-neutral-200');
                 localStorage.setItem('color-theme', 'light');
                 setIsDark(false)
 
             } else {
-                document.documentElement.classList.add('dark','bg-gray-800');
+                document.documentElement.classList.add('dark', 'bg-gray-800');
                 document.documentElement.classList.remove('bg-neutral-200');
                 localStorage.setItem('color-theme', 'dark');
                 setIsDark(true)
@@ -128,7 +128,7 @@ function NavBar() {
 
 
                                     <li>
-                                        <NavLink to='' className="  block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:hover:text-green-500 md:p-0 dark:text-white md:dark:text-white-500  " aria-current="page"><FontAwesomeIcon icon={faHouse} size="xl" className='duration-200 hover:-rotate-12' /></NavLink>
+                                        <NavLink to='Ecommerce' className="  block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:hover:text-green-500 md:p-0 dark:text-white md:dark:text-white-500  " aria-current="page"><FontAwesomeIcon icon={faHouse} size="xl" className='duration-200 hover:-rotate-12' /></NavLink>
                                     </li>
 
 

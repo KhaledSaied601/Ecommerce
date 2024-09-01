@@ -37,7 +37,7 @@ function App() {
       path: '', element: <LayOut />, children: [
 
 
-        { path: '/Ecommerce', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
+        { path: 'Ecommerce', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
         { path: "wishList", element: <ProtectedRoute> <WishList /> </ProtectedRoute> },
         { path: "/productDetails/:id", element: <ProtectedRoute> <ProductDetails /> </ProtectedRoute> },
         { path: "category/:name/:id", element: <ProtectedRoute> <CategoryDetail /> </ProtectedRoute> },

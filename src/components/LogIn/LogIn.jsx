@@ -47,7 +47,7 @@ function LogIn() {
 
                 setToken(res.data.token);
                 localStorage.setItem('Token', res.data.token)
-                navigate('/')
+                navigate('/Ecommerce')
 
 
 
